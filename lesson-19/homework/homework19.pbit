@@ -1,0 +1,131 @@
+📘 Power BI Publishing & Sharing Study Guide
+1. What is the difference between Power BI Desktop and Power BI Online Service?
+• 	Power BI Desktop is a Windows application for building reports and data models.
+• 	Power BI Online Service is a cloud platform for sharing, collaborating, and managing Power BI content.
+
+2. How do you publish a Power BI report from Desktop to the Online Service?
+• 	Click Publish in Power BI Desktop, sign in, and select a workspace in the Power BI Service to upload your report and dataset.
+
+3. What is a workspace in Power BI? What are the types of workspaces available?
+• 	A workspace is a container for organizing Power BI content.
+• 	Types:
+• 	My Workspace: Personal, private.
+• 	Shared Workspaces: Collaborative, team-based.
+
+4. What is the difference between a workspace and an app in Power BI?
+• 	A workspace is for development and collaboration.
+• 	An app is a packaged, read-only version of workspace content shared with users.
+
+5. Explain the different Power BI license types and their limitations.
+🧑‍💻 1. Power BI Free
+• 	Who it's for: Individual users doing personal data analysis.
+• 	Key Features:
+• 	Create reports and dashboards in Power BI Desktop.
+• 	Publish to Power BI Service (only to personal workspace).
+• 	Use Power BI mobile app.
+• 	Limitations:
+• 	No sharing: You can't share reports or collaborate with others.
+• 	No access to workspaces: Can't access content in shared or organizational workspaces.
+• 	No scheduled refresh: Limited data refresh capabilities.
+
+👥 2. Power BI Pro
+• 	Who it's for: Professionals and small teams who need to collaborate.
+• 	Key Features:
+• 	Share dashboards and reports with other Pro users.
+• 	Create and access workspaces.
+• 	Schedule data refreshes (up to 8 times/day).
+• 	Export to Excel, analyze in Excel, and use Power BI mobile.
+• 	Limitations:
+• 	Requires Pro for both sender and receiver: Everyone viewing shared content must have a Pro license.
+• 	Limited capacity: Each user gets 10 GB of storage.
+
+🏢 3. Power BI Premium (Per User)
+• 	Who it's for: Individuals needing advanced features without full enterprise Premium.
+• 	Key Features:
+• 	All Pro features plus:
+• 	Paginated reports.
+• 	AI capabilities (e.g., AutoML, cognitive services).
+• 	Larger dataset sizes (up to 100 GB).
+• 	Enhanced performance and refresh rates (up to 48/day).
+• 	Limitations:
+• 	Still user-based: Content sharing still requires recipients to have Premium Per User licenses.
+• 	No dedicated capacity: Performance depends on shared Microsoft infrastructure.
+
+🏢💼 4. Power BI Premium (Capacity-Based)
+• 	Who it's for: Enterprises needing scalable, organization-wide analytics.
+• 	Key Features:
+• 	Dedicated cloud capacity.
+• 	Unlimited content sharing (recipients don’t need Pro licenses).
+• 	On-premises reporting with Power BI Report Server.
+• 	Advanced AI, large models, and enhanced refresh.
+• 	Limitations:
+• 	High cost: Starts at thousands of dollars/month.
+• 	Requires capacity management: Admins must monitor and optimize usage.
+
+🧩 5. Power BI Embedded
+• 	Who it's for: Developers embedding Power BI visuals into custom apps.
+• 	Key Features:
+• 	Embed dashboards and reports in web or mobile apps.
+• 	Pay-as-you-go pricing based on capacity.
+• 	Limitations:
+• 	No Power BI portal access: Users interact only through the embedded app.
+• 	Requires development effort: Not plug-and-play for non-technical users
+
+6. How can you share a report with someone who doesn’t have a Pro license?
+• 	Use Premium capacity to allow Free users to view shared content.
+• 	Or use Publish to Web (not secure for sensitive data).
+
+7. What is a semantic model (dataset) in Power BI, and where is it stored in the service?
+• 	A dataset is the data model with tables, relationships, and measures.
+• 	It’s stored in the workspace where the report is published.
+
+8. How does Scheduled Refresh work in Power BI Online Service?
+• 	Automatically updates data from source systems.
+• 	Configured in dataset settings; requires a gateway for on-premises sources.
+
+9. What is the difference between a dataset and a dataflow in Power BI?
+• 	Dataset: Imported or live data model used in reports.
+• 	Dataflow: ETL process using Power Query online, stored in Azure Data Lake.
+
+10. When and why would you use a dataflow instead of a dataset?
+• 	Use dataflows for centralized, reusable data prep across multiple datasets or workspaces.
+
+11. What are dashboards in Power BI Online? How are they different from reports?
+• 	Dashboards: Single-page view with visuals from multiple reports/datasets.
+• 	Reports: Multi-page, interactive visuals tied to one dataset.
+
+12. How do you pin a visual to a dashboard from a report?
+• 	Hover over a visual in a report and click the pin icon, then choose a dashboard.
+
+13. What is the mobile view in Power BI and why is it useful?
+• 	A layout optimized for mobile devices.
+• 	Useful for accessing insights on the go, especially for executives or field workers.
+
+14. What is a paginated report in Power BI and when would you use it?
+• 	Pixel-perfect report ideal for printing or exporting.
+• 	Use for invoices, financial statements, or long tables across pages.
+
+15. Can you export reports from Power BI Service to PDF or PowerPoint? How?
+• 	Yes. Open the report, click File > Export, and choose PDF or PowerPoint.
+
+16. What does “Live Connection” mean in Power BI Service, and how does it work?
+• 	Connects to external data sources without importing data.
+• 	Queries are run live, ideal for real-time analysis.
+
+17. Explain Row-Level Security (RLS) and how it’s applied in Power BI Online.
+• 	RLS restricts data access based on user roles.
+• 	Defined in Desktop using DAX filters and published with the dataset.
+
+18. How can you test RLS roles in Power BI Service?
+• 	Go to dataset settings and use “View as” to simulate different roles.
+
+19. What are Apps in Power BI and how do you publish one?
+• 	Apps are curated collections of dashboards and reports.
+• 	To publish: Go to workspace > click Publish app > configure > share.
+
+20. What are some key benefits of using the Power BI Online Service in enterprise environments?
+• 	Centralized collaboration
+• 	Scalable data refresh
+• 	Integration with Microsoft 365
+• 	Governance via workspaces and RLS
+• 	Mobile access and real-time insights
