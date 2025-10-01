@@ -1,0 +1,56 @@
+Q1: How does Power BI handle large datasets in the Online Service, and what is the role of Premium Capacity in this?
+A: Power BI Online uses in-memory storage for imported datasets, which are compressed for performance. In Pro workspaces, datasets are limited to 1 GB. Premium Capacity lifts this limit—allowing up to 400 GB per dataset—and provides dedicated resources, faster refresh rates, and support for features like incremental refresh and XMLA endpoints.
+
+Q2: What are the differences between Import mode, DirectQuery, and Live Connection in Power BI Service?
+A:
+• 	Import Mode: Data is loaded into Power BI and stored in-memory. Fast performance, but not real-time.
+• 	DirectQuery: Queries are sent live to the source database. Real-time data, but slower performance.
+• 	Live Connection: Connects to external semantic models (e.g., SSAS). No data stored in Power BI; relies entirely on the source model.
+
+Q3: Explain deployment pipelines in Power BI Online. What stages do they include?
+A: Deployment pipelines help manage content across environments. They include three stages:
+• 	Development: Build and test reports.
+• 	Test: Validate with production-like data.
+• 	Production: Final version for end users.
+Premium users can automate transitions and compare content between stages.
+
+Q4: How can Power BI Service integrate with Microsoft Teams or SharePoint for collaboration?
+A:
+• 	In Teams, you can embed reports in channels or chats for real-time collaboration.
+• 	In SharePoint, use the Power BI web part to embed interactive reports directly into pages.
+Both platforms support secure sharing and enhance teamwork around data.
+
+Q5: What is the XMLA endpoint in Premium and how does it benefit developers or enterprise BI teams?
+A: The XMLA endpoint allows external tools to connect to Power BI datasets using the XML for Analysis protocol. In Premium workspaces, it supports read/write access, enabling advanced modeling, debugging, and integration with tools like SSMS or Tabular Editor—ideal for enterprise BI workflows.
+
+Q6: Describe how usage metrics and audit logs work in Power BI Service.
+A:
+• 	Usage Metrics: Show report views, user engagement, and frequency. Creators can customize these reports.
+• 	Audit Logs: Available via Microsoft 365 compliance center. Track user actions like sharing, viewing, and editing—critical for governance and security.
+
+Q7: How do you manage workspace access and permissions for different users?
+A: Assign roles within a workspace:
+• 	Admin: Full control.
+• 	Member: Can edit content.
+• 	Contributor: Can add content but not publish apps.
+• 	Viewer: Read-only access.
+You can also use Microsoft 365 groups or Azure AD to manage access centrally.
+
+Q8: How can data governance be enforced in Power BI Service?
+A: Governance is enforced through:
+• 	Sensitivity labels and DLP policies (via Microsoft Purview)
+• 	Audit logs and activity monitoring
+• 	Row-Level and Object-Level Security
+• 	Controlled sharing and workspace roles
+These tools help ensure compliance and protect sensitive data.
+
+Q9: What are the limitations of Row-Level Security when using DirectQuery or Live Connection?
+A:
+• 	Performance: RLS can slow down DirectQuery due to dynamic filtering.
+• 	Complexity: Rules must be carefully designed to avoid errors.
+• 	Live Connection: RLS must be defined in the source model (e.g., SSAS), not in Power BI.
+
+Q10: Explain how you can refresh a dataset via Power Automate or REST API.
+A:
+• 	Power Automate: Use the “Refresh a dataset” action in a flow triggered by events like file uploads or schedules.
+• 	REST API: Use the  endpoint to trigger refreshes programmatically. You can also monitor status and automate retries.
